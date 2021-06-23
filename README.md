@@ -28,7 +28,7 @@ import express from "express";
 
 app = express()
 app.get("/teste, (request, response) => {
-  return response.send("Olá mundo, este é o metodo POST!)
+  return response.send("Olá mundo, este é o metodo GET!)
 }
 
 // O request, é quando algo entra, já o response, é quando sai!
@@ -51,3 +51,8 @@ app.get("/teste-post, (request, response) => {
 #### Isso porque o <strong>Browser</strong> por padrão, toda requisição que ele recebe são requisições ``` GET ```, mas oque vamos utilizar, para conseguirmos fazer nosso acesso nessa rota via ``` POST ``` ?
 
 <p>Vamos utilizar o <strong>Insomnia</strong>, o Insomnia vai ser o nosso <strong>Client</strong> que vai estar requisitando a nossa rota.</p>
+
+### Como utilizar o Insomnia?
+
+#### Essa é a tela inicial quando acessamos o aplicativo: 
+
