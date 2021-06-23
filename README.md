@@ -1,6 +1,6 @@
 ## Primeira Aula | NLW Together
 
-### Primeiros Comandos com yarn
+### Primeiros Comandos com ```yarn```
 
 Comando    |  Função
 --------------- | -------------
