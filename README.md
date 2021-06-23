@@ -65,3 +65,21 @@ app.get("/teste-post, (request, response) => {
 #### Depois coloque o link da rota:
 
 <img src="https://media.giphy.com/media/8DRxQmBA7q5ORzMLCe/giphy.gif">
+
+## Segunda Aula | NLW Together
+
+### Tipos de Parâmetros
+
+Tipo | Função do parâmetro
+------- | ----------
+```Router Params``` | São parâmetros inserido na própria rota, dividido por ```/``` Exemplo: ```http:localhost:3000/produtos/7894271897412847```, são IDs
+```Query Params``` | São parâmetros que fazem parte de uma Query, quando nós queremos por exemplo buscar uma coisa e fazer um filtro, Exemplo ```http:localhost:3000/produtos?name="teclado"&description="tecladobom"```, a diferença entre os ```Query Params``` e o ```Router Params```, Quando eu tenho o <strong>Query Params</strong> são parâmetros não obrigatórios, então eu posso tanto receber, como não receber
+```Body Params``` | São parâmetros que vão vir no corpo da nossa requisição, Utilizamos para ```POST```, ```PUT``` e quando a gente quer fazer um ```PATH```, não utilizamos no ```GET``` !, Exemplo: ``` {"name": "teclado", "description": "teclado bom"}```
+
+### Banco de Dados
+
+#### Formas de usar Banco de Dados na nossa aplicação!
+
+<p>Uma forma mais mão na massa, é utilizar o próprio driver do nosso <strong>Banco de Dados</strong></p>
+<p>Usando <strong>Query Builders</strong>, ele não é tão mão na massa, mas também não é menos código quanto o ORM</p>
+<p>O ORM tranforma nosso código, em uma maneira que nosso Banco de Dados consiga entender</p>
