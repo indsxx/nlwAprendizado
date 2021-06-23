@@ -11,7 +11,7 @@ Comando    |  Função
 ``` yarn add ts-node-dev -D ```| Instala uma biblioteca que converte nosso código <strong>TS</strong> para o Node entender, assim sem prescisar usar infinitos ``` yarn tsc ```, para utilizar esse comando, usamos o ``` yarn dev ```
                  
                  
-                 
+### Principais metodos do ``` Express ```
   
 Método | Função do método
 ---------------- | ---------------
