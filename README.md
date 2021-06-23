@@ -56,3 +56,12 @@ app.get("/teste-post, (request, response) => {
 
 #### Essa é a tela inicial quando acessamos o aplicativo: 
 
+<img src="https://media.discordapp.net/attachments/847095771974598690/857267153531437106/unknown.png?width=886&height=468">
+
+#### Para criar um request, faça isso:
+
+<img src="https://media.giphy.com/media/KfZ3Ts65V1Z2BahJjN/giphy.gif">
+
+#### Depois coloque o link da rota:
+
+<img src="https://media.giphy.com/media/8DRxQmBA7q5ORzMLCe/giphy.gif">
