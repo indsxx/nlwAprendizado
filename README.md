@@ -85,3 +85,57 @@ Tipo | Função do parâmetro
 <p>Uma forma mais mão na massa, é utilizar o próprio driver do nosso <strong>Banco de Dados</strong></p>
 <p>Usando <strong>Query Builders</strong>, ele não é tão mão na massa, mas também não é menos código quanto o ORM</p>
 <p>O ORM tranforma nosso código, em uma maneira que nosso Banco de Dados consiga entender</p>
+
+#### Para utilizar o ORM vamos usar o comando: ```yarn add typeorm reflect-metadata sqlite3```
+
+Depois, crie um arquivo chamando ```ormconfig.json``` na raiz do projeto e dentro dele coloque as seguintes configurações
+
+```json
+{
+    "type": "sqlite",
+    "database": "src/database/database.sqlite"
+}
+```
+
+Esse ```"database"``` serve, para quando rodarmos a aplicação, ele criar o o arquivo ```sqlite```
+
+* Crie uma pasta chamada ```database``` para o **ormconfig.json** não dar erro, depois crie um arquivo chamado ```index.ts```, Mais ou menos assim: 
+
+<img src="https://media.discordapp.net/attachments/847095771974598690/857615559776272394/Captura_de_tela_de_2021-06-24_10-37-55.png">
+
+Depois cole esse código:
+
+```ts
+import { createConnection } from "typeorm";
+
+createConnection();
+```
+Esse código vai criar uma conexão, com o Banco de Dados;
+
+Depois disso cole o código a seguir no ```server.ts```
+
+```ts
+import "./database"
+```
+Quando tem o arquivo ```index.ts``` ou ```index.js``` ele já sabe que o arquivo que ele tem que importar é o **index**!
+
+Hora de rodar a aplicação!, para isso vmaos usar o comando ```yarn dev```
+
+Depois de rodarmos:
+
+<img src="https://media.discordapp.net/attachments/847095771974598690/857618255967813632/Captura_de_tela_de_2021-06-24_10-48-19.png">
+
+<p>Ai está!</p>
+
+#### Já configuramos o nosso banco de dados!
+
+### Migrations
+
+<p>Oque são migrations?</p>
+
+Migrations nada mais é do que um controle que a gente tem diversionamente de tabelas dentro da nossa aplicação
+
+#### Agora vamos instalar o Migrations!
+
+Dentro do nosso ```ormconfig.json``` vamos criar um **cli**, mas antes vamos entender oque é um **cli**, o **cli** é uma ferramenta que nos da uma opção de baixar o typeorm de forma global, mas não vamos utilizar o **cli** nativo! Vamos utilizar o cli que está na biblioteca que instalamos 
+
