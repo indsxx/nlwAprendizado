@@ -12,6 +12,8 @@ Comando    |  Função
                  
                  
 ### Principais metodos do ``` Express ```
+
+#### Para instalar o  <strong>Express</strong> , use o comando: ```yarn add express -D ``` , também é necessario baixar os tipos, para isso use o comando ```yarn add @types/express -D ``` 
   
 Método | Função do método
 ---------------- | ---------------
@@ -40,7 +42,7 @@ app.get("/teste, (request, response) => {
 import express from "express";
 
 app = express()
-app.get("/teste-post, (request, response) => {
+app.post("/teste-post, (request, response) => {
   return response.send("Olá mundo, este é o metodo POST!)
 }
 ```
